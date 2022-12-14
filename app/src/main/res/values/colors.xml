@@ -11,11 +11,4 @@
     <color name="blush">#FE828C</color>
     <color name="blue">#3F97FF</color>
     <color name="red">#BC0000</color>
-
-    <array name="colors">
-        <item>#EA1212</item>
-        <item>#DCA419</item>
-        <item>#FBE521</item>
-        <item>#1EE610</item>
-    </array>
 </resources>
