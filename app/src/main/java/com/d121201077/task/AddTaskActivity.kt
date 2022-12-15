@@ -19,8 +19,7 @@ import java.util.*
 import kotlinx.coroutines.launch
 
 
-class
-AddTaskActivity: AppCompatActivity(){
+class AddTaskActivity: AppCompatActivity(){
     lateinit var adapter: ArrayAdapter<CharSequence>
     lateinit var taskViewModel: TaskViewModel
 
@@ -92,7 +91,7 @@ AddTaskActivity: AppCompatActivity(){
         type = intent.getStringExtra("type").toString()
 
         if(title.isEmpty()) {
-            Toast.makeText(this@AddTaskActivity, "Judul belum terisi", Toast.LENGTH_LONG).show()
+            Toast.makeText(this@AddTaskActivity, "Isilah judul", Toast.LENGTH_LONG).show()
             addTaskTitle.requestFocus()
             return
         }

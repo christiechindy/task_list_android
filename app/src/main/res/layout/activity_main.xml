@@ -8,11 +8,13 @@
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
-        app:titleTextColor="@android:color/white"
-        app:title="Task Management"
+        app:title="-"
+        app:titleTextColor="@color/blush"
+        app:subtitleTextColor="@color/white"
+        app:subtitle="  Chindy Christie Davina                            D121201077"
         android:background="@color/blush"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/textYourList"
@@ -20,8 +22,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbar"
         android:layout_marginTop="20dp"
-
+        android:layout_marginStart="40dp"
         android:text="Your Todo List"
+        android:textSize="24dp"
+        android:textStyle="bold"
         android:textColor="@color/black" />
 
     <androidx.recyclerview.widget.RecyclerView

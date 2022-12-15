@@ -47,6 +47,16 @@ class TaskAdapter(val taskClickInterface: TaskClickInterface): RecyclerView.Adap
                 taskImportance.text = task.importance
                 taskUrgencity.text = task.urgencity
 
+                when(task.importance) {
+                    context!!.resources.getStringArray(R.array.taskImportance)[0] -> taskImportance.setTextColor(colors[0])
+                    context!!.resources.getStringArray(R.array.taskImportance)[1] -> taskImportance.setTextColor(colors[1])
+                }
+
+                when(task.urgencity) {
+                    context!!.resources.getStringArray(R.array.taskUrgencity)[0] -> taskUrgencity.setTextColor(colors[0])
+                    context!!.resources.getStringArray(R.array.taskUrgencity)[1] -> taskUrgencity.setTextColor(colors[1])
+                }
+
                 taskViewLayout.setOnClickListener {
                     taskClickInterface.onNoteClick(task)
                 }
